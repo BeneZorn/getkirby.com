@@ -38,7 +38,7 @@ Tags: design, photography, architecture, whatever
 
 ## Filtering content by tag
 
-In your controllers, templates etc. you can now use the content of this field to filter your pages. Using the `filterBy()` method we can not only filter pages by a single value single value in a field but also to find a certain value in a list like the tags list above. Therefore, we we can filter a set of pages by tag in a single line:
+In your controllers, templates etc. you can now use the content of this field to filter your pages. Using the `filterBy()` method we can not only filter pages by a single value in a field but also to find a certain value in a list like the tags list above. Therefore, we can filter a set of pages by tag in a single line:
 
 ```php
 $filteredPages = $page->children()->filterBy('tags', 'design', ',');
